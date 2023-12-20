@@ -16,6 +16,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS stations(
     temperature REAL,
     humidity REAL);"""
     )
+
 conn.commit()
 
 # Добавление записей в БД:
