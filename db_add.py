@@ -1,10 +1,8 @@
 import sqlite3
 
-
 conn = sqlite3.connect('bd.db')
 cursor = conn.cursor()
-
-def add_sign(counter, temp):
+def add_inf(counter, temp):
     cursor.execute(
         """
                     INSERT INTO stations (
