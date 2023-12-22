@@ -21,3 +21,4 @@ def query(data):
     res = cursor.fetchall()
     print(*res, sep="\n")
     print(len(res))
+    #
