@@ -12,13 +12,13 @@ def query(data):
     minn = min(lst)
 
     cursor.execute(
-        """SELECT * FROM stations
-            WHERE year=? and month=? and day=?;""",
-        data
+        f"""SELECT * FROM stations
+            WHERE temperature={minn};""",
     )
     # res = cursor.fetchone()
     # res = cursor.fetchmany()
     res = cursor.fetchall()
     print(*res, sep="\n")
     print(len(res))
+    #
     #

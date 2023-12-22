@@ -33,3 +33,4 @@ def add_inf(counter, temp):
     )
     conn.commit()
 #
+#
